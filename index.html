@@ -390,16 +390,22 @@
 
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-[#FFF8DE]">
-        <!-- Full-Bleed Atmospheric Background -->
-        <div class="absolute inset-0 z-0">
+    <section id="hero"
+        class="relative overflow-hidden bg-[#FFF8DE] lg:min-h-[90vh] lg:flex lg:items-center pt-16 lg:pt-20">
+        <!-- Mobile-Only Top Square Image -->
+        <div class="lg:hidden w-full overflow-hidden">
+            <img src="assets/banner.png" alt="L&T Crestoria" class="w-full aspect-square object-cover">
+        </div>
+
+        <!-- Desktop Full-Bleed Atmospheric Background -->
+        <div class="hidden lg:block absolute inset-0 z-0">
             <img src="assets/banner.png" alt="L&T Crestoria" class="w-full h-full object-cover">
             <!-- Cinematic Overlay Layers -->
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
         </div>
 
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container mx-auto px-4 relative z-10 py-10 lg:py-0">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
                 <!-- Left: Restored Project Info Card -->
                 <div class="w-full lg:w-[35%] animate-float relative group">
